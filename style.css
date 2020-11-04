@@ -202,6 +202,13 @@ footer {
   height: 60px;
   width: 60px;
 }
+@media only screen and (max-width: 995px) {
+  .ba-di {
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+}
+
 .ba-di a {
   color: white;
 }
@@ -676,6 +683,6 @@ figcaption {
 
 @media only screen and (max-width: 995px) {
   .cont {
-    margin-top: 130px;
+    margin-top: 250px;
   }
 }
