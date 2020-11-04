@@ -19,10 +19,10 @@ body {
   color: white;
 }
 
-#work:hover {
+.work:hover {
   background-color: blueviolet;
 }
-#work {
+.work {
   border: 2px purple solid;
   color: white;
 }
