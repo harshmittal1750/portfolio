@@ -212,7 +212,9 @@ footer {
 .ba-di a {
   color: white;
 }
-
+.ico-effect {
+  text-align: center;
+}
 .ico-effect i {
   color: #05c2c9;
 }
