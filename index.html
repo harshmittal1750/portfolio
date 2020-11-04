@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Home -Me</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/js/smooth.js"></script>
+    <script src="assets/js/skillbar.js"></script>
+  </head>
+
+  <body>
+    <div class="head-bg">
+      <div style="height: 25vh"></div>
+      <div class="container text-center">
+        <div class="head-color">
+          <h1>Hello,I m <span style="color: #ee0979">Harsh Mittal</span></h1>
+          <h1>I' m a full stack web developer</h1>
+        </div>
+        <a
+          name="work"
+          id="work"
+          class="btn btn-trasparent"
+          href="#"
+          role="button"
+          >View my work <span><i class="fa fa-chevron-down"></i></span
+        ></a>
+      </div>
+    </div>
+
+    <div class="container">
+      <ul class="nav nav-tabs" id="navId">
+        <li class="nav-item">
+          <a href="#tab1Id" class="nav-link active">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#tab5Id" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div
+          class="tab-pane fade show active"
+          id="tab1Id"
+          role="tabpanel"
+        ></div>
+        <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+        <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+      </div>
+
+      <script>
+        $("#navId a").click((e) => {
+          e.preventDefault();
+          $(this).tab("show");
+        });
+      </script>
+    </div>
+    <div class="mt-5"></div>
+
+    <h1 class="text-center">About</h1>
+    <div class="container">
+      <div class="mb-5"></div>
+      <div class="row">
+        <div class="col-6 col-md-3">
+          <div class="ico-effect">
+            <i
+              style="font-size: 5em; text-align: center"
+              class="fa fa-desktop"
+            ></i>
+          </div>
+
+          <span><h3>Responsive</h3></span>My layouts will work on any device,
+          big or small.
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="ico-effect">
+            <i
+              class="fa fa-lightbulb-o"
+              style="font-size: 5em; text-align: center"
+              aria-hidden="true"
+            ></i>
+          </div>
+          <span><h3>Dynamic</h3> </span> Websites don't have to be static, I
+          love making pages come to life.
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="ico-effect">
+            <i
+              style="font-size: 5em; text-align: center"
+              class="fa fa-fighter-jet"
+            ></i>
+          </div>
+
+          <span><h3>Fast</h3> </span>
+          <p>Fast load times and lag free interaction, my highest priority.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="ico-effect">
+            <i
+              class="fa fa-rocket"
+              style="font-size: 5em; text-align: center"
+            ></i>
+          </div>
+
+          <span><h3>Intuitive</h3> </span> Strong preference for easy to use,
+          intuitive UX/UI.
+        </div>
+      </div>
+    </div>
+    <div class="mt-5"></div>
+
+    <div class="container">
+      <div class="row" style="height: 60vh">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="imgBx">
+              <img src="assets/img/meeee.jpeg" alt="images" />
+            </div>
+            <div class="details">
+              <h2>Harsh mittal<br /><span>Full stack developer</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="skillbar clearfix" data-percent="95%">
+            <div class="skillbar-title" style="background: #05c2c9">
+              <span>HTML</span>
+            </div>
+            <div
+              class="skillbar-bar"
+              style="background: #05c2c9; width: 95%"
+            ></div>
+            <div class="skill-bar-percent">95%</div>
+          </div>
+          <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix" data-percent="90%">
+            <div class="skillbar-title" style="background: #05c2c9">
+              <span>CSS</span>
+            </div>
+            <div
+              class="skillbar-bar"
+              style="background: #05c2c9; width: 90%"
+            ></div>
+            <div class="skill-bar-percent">90%</div>
+          </div>
+          <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix" data-percent="80%">
+            <div class="skillbar-title" style="background: #05c2c9">
+              <span>JS</span>
+            </div>
+            <div
+              class="skillbar-bar"
+              style="background: #05c2c9; width: 70%"
+            ></div>
+            <div class="skill-bar-percent">70%</div>
+          </div>
+          <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix" data-percent="65%">
+            <div class="skillbar-title" style="background: #05c2c9">
+              <span>SEO</span>
+            </div>
+            <div
+              class="skillbar-bar"
+              style="background: #05c2c9; width: 65%"
+            ></div>
+            <div class="skill-bar-percent">65%</div>
+          </div>
+          <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix" data-percent="70%">
+            <div class="skillbar-title" style="background: #05c2c9">
+              <span>MYSQL</span>
+            </div>
+            <div
+              class="skillbar-bar"
+              style="background: #05c2c9; width: 70%"
+            ></div>
+            <div class="skill-bar-percent">70%</div>
+          </div>
+          <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix" data-percent="60%">
+            <div class="skillbar-title" style="background: #05c2c9">
+              <span>PHP</span>
+            </div>
+            <div
+              class="skillbar-bar"
+              style="background: #05c2c9; width: 60%"
+            ></div>
+            <div class="skill-bar-percent">60%</div>
+          </div>
+          <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix" data-percent="80%">
+            <div class="skillbar-title" style="background: #05c2c9">
+              <span>BOOTSTRAP</span>
+            </div>
+            <div
+              class="skillbar-bar"
+              style="background: #05c2c9; width: 80%"
+            ></div>
+            <div class="skill-bar-percent">80%</div>
+          </div>
+          <!-- End Skill Bar -->
+        </div>
+      </div>
+    </div>
+
+    <div class="cont">
+      <!-- flip-card-container -->
+      <div class="flip-card-container" style="--hue: 220">
+        <div class="flip-card">
+          <div class="card-front">
+            <figure>
+              <div class="img-bg"></div>
+              <img
+                class="ca-img"
+                src="assets/img/w1.png"
+                alt="DelishHomemades"
+              />
+              <figcaption>DelishHomemades</figcaption>
+            </figure>
+          </div>
+
+          <div class="card-back">
+            <figure>
+              <div class="img-bg"></div>
+              <img class="ca-img" src="assets/img/w1.png" alt="Ciais" />
+            </figure>
+
+            <button class="but">
+              <a href="https://delishhomemades.in/">view</a>
+            </button>
+
+            <div class="design-container">
+              <span class="design design--1"></span>
+              <span class="design design--2"></span>
+              <span class="design design--3"></span>
+              <span class="design design--4"></span>
+              <span class="design design--5"></span>
+              <span class="design design--6"></span>
+              <span class="design design--7"></span>
+              <span class="design design--8"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /flip-card-container -->
+
+      <!-- flip-card-container -->
+      <div class="flip-card-container" style="--hue: 170">
+        <div class="flip-card">
+          <div class="card-front">
+            <figure>
+              <div class="img-bg"></div>
+              <img class="ca-img" src="assets/img/w2.png" alt="More" />
+              <figcaption>CIAIS</figcaption>
+            </figure>
+          </div>
+
+          <div class="card-back">
+            <figure>
+              <div class="img-bg"></div>
+              <img class="ca-img" src="assets/img/w2.png" alt="image-2" />
+            </figure>
+
+            <button class="but">
+              <a href="https://ciais2021.com/">view</a>
+            </button>
+
+            <div class="design-container">
+              <span class="design design--1"></span>
+              <span class="design design--2"></span>
+              <span class="design design--3"></span>
+              <span class="design design--4"></span>
+              <span class="design design--5"></span>
+              <span class="design design--6"></span>
+              <span class="design design--7"></span>
+              <span class="design design--8"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /flip-card-container -->
+
+      <!-- flip-card-container -->
+      <div class="flip-card-container" style="--hue: 350">
+        <div class="flip-card">
+          <div class="card-front">
+            <figure>
+              <div class="img-bg"></div>
+              <img class="ca-img" src="assets/img/W3.png" alt="Brohm Lake" />
+              <figcaption>Working on more</figcaption>
+            </figure>
+          </div>
+
+          <div class="card-back">
+            <!-- only if the image is necessary -->
+            <figure>
+              <div class="img-bg"></div>
+              <img class="ca-img" src="assets/img/W3.png" alt="Brohm Lake" />
+            </figure>
+
+            <button class="but"><a href="">view</a></button>
+
+            <!-- can add svg here and remove these eight spans -->
+            <div class="design-container">
+              <span class="design design--1"></span>
+              <span class="design design--2"></span>
+              <span class="design design--3"></span>
+              <span class="design design--4"></span>
+              <span class="design design--5"></span>
+              <span class="design design--6"></span>
+              <span class="design design--7"></span>
+              <span class="design design--8"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /flip-card-container -->
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+    <footer class="py-5">
+      <div style="height: 15vh"></div>
+      <h1 class="py-5" style="text-align: center">Contact</h1>
+      <div class="container">
+        <div class="login-box">
+          <form>
+            <div class="user-box">
+              <input type="text" name="" required="" />
+              <label>Name</label>
+            </div>
+            <div class="user-box">
+              <input type="email" name="" required="" />
+              <label>Email</label>
+            </div>
+            <div class="user-box">
+              <p>Message</p>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Submit
+            </a>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      style="
+        background-color: #ee0979;
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        width: 1.5em;
+        height: 1.7em;
+        border: 1px solid black;
+        position: absolute;
+        margin-top: -15px;
+        left: 50%;
+        right: 50%;
+      "
+    >
+      <a href="#" style="color: white">
+        <i class="fa fa-angle-double-up"></i
+      ></a>
+    </div>
+    <div class="foote" id="contact">
+      <div class="container">
+        <div style="height: 5vh"></div>
+        <div class="soc-med" style="margin: 0 auto; width: 30%">
+          <div class="d-flex justify-content-around">
+            <div class="ba-di">
+              <div class="ico-effect">
+                <a href=" https://www.facebook.com/harshmittal1750"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="ba-di">
+              <div class="ico-effect">
+                <a href="https://www.instagram.com/harshmittal1750/"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="ba-di">
+              <div class="ico-effect">
+                <a href="https://twitter.com/harshmittal1750"
+                  ><i class="fa fa-twitter" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <div class="ba-di">
+              <div class="ico-effect">
+                <a href="https://github.com/harshmittal1750"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="text-center text m-0 small" style="color: cadetblue">
+        &nbsp; HARSH MITTAL &copy <span style="color: #ee0979">2020</span>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
