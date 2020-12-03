@@ -12,8 +12,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
     />
+   
 
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -24,12 +26,13 @@
       href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/smooth.js"></script>
     <script src="assets/js/skillbar.js"></script>
   </head>
 
   <body>
-    <div class="head-bg" id="home">
+    <div class="head-bg" data-aos="fade-up"id="home">
       <div style="height: 25vh"></div>
       <div class="container text-center">
         <div class="head-color">
@@ -44,7 +47,7 @@
 
     <div class="container">
       <ul class="nav nav-tabs" id="navId">
-        <li class="nav-item">
+        <li class="nav-item" data-aos="fade-down">
           <a href="#home" class="nav-link active">Home</a>
         </li>
 
@@ -81,10 +84,11 @@
       <div class="mb-5"></div>
       <div class="row">
         <div class="col-6 col-md-3">
-          <div class="ico-effect">
+          <div class="ico-effect" data-aos="fade-right" >
             <i
               style="font-size: 5em; text-align: center"
-              class="fa fa-desktop"
+              class="fa fa-desktop" 
+              
             ></i>
           </div>
 
@@ -93,7 +97,7 @@
             big or small.
           </div>
         </div>
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3"data-aos="zoom-in-right">
           <div class="ico-effect">
             <i
               class="fa fa-lightbulb-o"
@@ -106,7 +110,7 @@
             love making pages come to life.
           </div>
         </div>
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3"data-aos="zoom-in-left">
           <div class="ico-effect">
             <i
               style="font-size: 5em; text-align: center"
@@ -121,7 +125,7 @@
             </p>
           </div>
         </div>
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-3 " data-aos="fade-left">
           <div class="ico-effect">
             <i
               class="fa fa-rocket"
@@ -141,7 +145,7 @@
     <div class="container">
       <div class="row" style="height: 60vh">
         <div class="col-lg-4">
-          <div class="card">
+          <div class="card" data-aos="fade-right">
             <div class="imgBx">
               <img src="assets/img/meeee.jpeg" alt="images" />
             </div>
@@ -152,7 +156,7 @@
         </div>
 
         <div class="col-lg-8">
-          <div class="skillbar clearfix" data-percent="95%">
+          <div class="skillbar clearfix" data-aos="fade-left" data-percent="95%">
             <div class="skillbar-title" style="background: #05c2c9">
               <span>HTML</span>
             </div>
@@ -164,7 +168,7 @@
           </div>
           <!-- End Skill Bar -->
 
-          <div class="skillbar clearfix" data-percent="90%">
+          <div class="skillbar clearfix" data-aos="fade-left" data-percent="90%">
             <div class="skillbar-title" style="background: #05c2c9">
               <span>CSS</span>
             </div>
@@ -176,7 +180,7 @@
           </div>
           <!-- End Skill Bar -->
 
-          <div class="skillbar clearfix" data-percent="80%">
+          <div class="skillbar clearfix" data-aos="fade-left" data-percent="80%">
             <div class="skillbar-title" style="background: #05c2c9">
               <span>JS</span>
             </div>
@@ -188,7 +192,7 @@
           </div>
           <!-- End Skill Bar -->
 
-          <div class="skillbar clearfix" data-percent="65%">
+          <div class="skillbar clearfix" data-aos="fade-left" data-percent="65%">
             <div class="skillbar-title" style="background: #05c2c9">
               <span>SEO</span>
             </div>
@@ -200,7 +204,7 @@
           </div>
           <!-- End Skill Bar -->
 
-          <div class="skillbar clearfix" data-percent="70%">
+          <div class="skillbar clearfix" data-aos="fade-left" data-percent="70%">
             <div class="skillbar-title" style="background: #05c2c9">
               <span>MYSQL</span>
             </div>
@@ -212,7 +216,7 @@
           </div>
           <!-- End Skill Bar -->
 
-          <div class="skillbar clearfix" data-percent="60%">
+          <div class="skillbar clearfix" data-aos="fade-left" data-percent="60%">
             <div class="skillbar-title" style="background: #05c2c9">
               <span>PHP</span>
             </div>
@@ -224,7 +228,7 @@
           </div>
           <!-- End Skill Bar -->
 
-          <div class="skillbar clearfix" data-percent="80%">
+          <div class="skillbar clearfix" data-aos="fade-left" data-percent="80%">
             <div class="skillbar-title" style="background: #05c2c9">
               <span>BOOTSTRAP</span>
             </div>
@@ -246,7 +250,7 @@
         </div>
       </div>
       <!-- flip-card-container -->
-      <div class="flip-card-container" style="--hue: 220">
+      <div class="flip-card-container" data-aos="flip-right"style="--hue: 220">
         <div class="flip-card">
           <div class="card-front">
             <figure>
@@ -260,7 +264,7 @@
             </figure>
           </div>
 
-          <div class="card-back">
+          <div class="card-back" >
             <figure>
               <div class="img-bg"></div>
               <img class="ca-img" src="assets/img/w1.png" alt="Ciais" />
@@ -287,7 +291,7 @@
 
       <!-- flip-card-container -->
       <div class="flip-card-container" style="--hue: 170">
-        <div class="flip-card">
+        <div class="flip-card" data-aos="flip-left">
           <div class="card-front">
             <figure>
               <div class="img-bg"></div>
@@ -322,7 +326,7 @@
       <!-- /flip-card-container -->
 
       <!-- flip-card-container -->
-      <div class="flip-card-container" style="--hue: 350">
+      <div class="flip-card-container" data-aos="flip-right" style="--hue: 350">
         <div class="flip-card">
           <div class="card-front">
             <figure>
@@ -387,15 +391,15 @@
             method="post"
             enctype="text/plain"
           >
-            <div class="user-box">
+            <div class="user-box" data-aos="fade-right">
               <input type="text" name="" required="" />
               <label>Name</label>
             </div>
-            <div class="user-box">
+            <div class="user-box" data-aos="fade-left" >
               <input type="email" name="" required="" />
               <label>Email</label>
             </div>
-            <div class="user-box">
+            <div class="user-box" data-aos="fade-right">
               <p>Message</p>
               <textarea
                 class="form-control"
@@ -462,6 +466,14 @@
                 ></a>
               </div>
             </div>
+           
+
+              <div class="ico-effect">
+                <a href="https://dev.to/harshmittal1750">
+                  <img src="assets/img/dev-brands.svg">
+                </a
+              </div>
+            </div>    
           </div>
         </div>
       </div>
@@ -473,5 +485,13 @@
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>AOS.init({
+  
+   duration: 1200,
+   disable: 'mobile'
+  
+    })
+    
+    </script>
   </body>
 </html>
