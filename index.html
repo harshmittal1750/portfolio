@@ -49,12 +49,12 @@
     <div class="demo-content">
       <header class="entry-header"></header>
 
-      <div id="loader-wrapper">
+      <!-- <div id="loader-wrapper">
         <div id="loader"></div>
 
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
-      </div>
+      </div> -->
       <div class="content" style="margin-top: -100px">
         <div class="head-bg" data-aos="fade-up" id="home">
           <div style="height: 25vh"></div>
@@ -63,53 +63,53 @@
               <h1>
                 Hello,I m <span style="color: #ee0979">Harsh Mittal</span>
               </h1>
-              <h1>I' m a full stack web developer</h1>
+              <h1>Aspiring Web developer</h1>
             </div>
             <a class="btn btn-trasparent work" href="#pro" role="button"
               >View my work <span><i class="fa fa-chevron-down"></i></span
             ></a>
           </div>
         </div>
+        <script>
+          $(document).ready(function () {
+            $(window).scroll(function () {
+              console.log($(window).scrollTop());
 
-        <div class="container">
-          <ul class="nav nav-tabs" id="navId">
-            <li class="nav-item" data-aos="fade-down">
-              <a href="#home" class="nav-link active">Home</a>
-            </li>
+              if ($(window).scrollTop() > 550) {
+                $("#nav_bar").addClass("navbar-fixed-top");
+              }
 
-            <li class="nav-item">
-              <a href="#about" id="about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#pro" class="nav-link">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-          </ul>
-
-          <div class="tab-content">
-            <div
-              class="tab-pane fade show active"
-              id="home"
-              role="tabpanel"
-            ></div>
-            <div class="tab-pane fade" id="about" role="tabpanel"></div>
-            <div class="tab-pane fade" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
-          </div>
-
-          <script>
-            $("#navId a").click((e) => {
-              e.preventDefault();
-              $(this).tab("show");
+              if ($(window).scrollTop() < 551) {
+                $("#nav_bar").removeClass("navbar-fixed-top");
+              }
             });
-          </script>
-        </div>
+          });
+        </script>
+
+        <nav class="nav nav-tabs container" id="nav_bar">
+          <li class="nav-item" data-aos="fade-down">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#About" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#pro" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item ml-auto d-flex">
+            <a href="assets/Resume.pdf" class="nav-link">
+              <i class="fa fa-download p-2" aria-hidden="true"></i>Resume</a
+            >
+          </li>
+        </nav>
+
         <div class="mt-5"></div>
 
-        <h1 class="text-center text-black-50">About</h1>
+        <h1 class="text-center text-black-50" id="About">About</h1>
         <div class="container">
           <div class="mb-5"></div>
           <div class="row">
@@ -460,7 +460,7 @@
             crossorigin="anonymous"
           ></script>
         </div>
-        <footer class="py-5">
+        <!-- <footer class="py-5">
           <div style="height: 15vh"></div>
           <h1 class="py-5" style="text-align: center">Contact</h1>
           <div class="container">
@@ -471,32 +471,39 @@
                 enctype="text/plain"
               >
                 <div class="user-box" data-aos="fade-right">
-                  <input type="text" name="" required="" />
+                  <input type="text" name="name" required="" />
                   <label>Name</label>
                 </div>
                 <div class="user-box" data-aos="fade-left">
-                  <input type="email" name="" required="" />
+                  <input type="email" name="email" required="" />
                   <label>Email</label>
                 </div>
                 <div class="user-box" data-aos="fade-right">
-                  <p>Message</p>
+                  <p style="color: white">Message</p>
                   <textarea
                     class="form-control"
                     id="exampleFormControlTextarea1"
                     rows="3"
+                    name="message"
                   ></textarea>
                 </div>
-                <a href="#">
+                <button
+                  href="#"
+                  id="submit"
+                  class="submit-button"
+                  type="submit"
+                  value="SEND"
+                >
                   <span></span>
                   <span></span>
                   <span></span>
                   <span></span>
                   Submit
-                </a>
+                </button>
               </form>
             </div>
           </div>
-        </footer>
+        </footer> -->
 
         <div class="tohome">
           <a href="#" style="color: white">
@@ -555,7 +562,12 @@
           >
             &nbsp;
             <span style="font-size: larger"
-              >HARSH MITTAL&copy <span style="color: #ee0979">2020</span></span
+              >HARSH MITTAL&copy
+              <span style="color: #ee0979">
+                <script>
+                  document.write(currentTime.getFullYear());
+                </script>
+              </span></span
             >
           </div>
         </div>
@@ -565,6 +577,7 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script>
       AOS.init({
+        disable: "mobile",
         duration: 1200,
       });
     </script>
